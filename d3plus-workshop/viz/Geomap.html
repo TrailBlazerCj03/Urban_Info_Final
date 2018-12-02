@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="../d3plus.v2.js"></script>
+
+<body>
+
+</body>
+
+<script>
+
+  const points = [
+    {id: "New York", value: 1834, point: [-73.9609, 40.8084], country: "usa"},
+    {id: "Los Angeles", value: 2602, point: [-117.9190, 33.8121], country: "usa"}
+  ];
+
+  let geomap = new d3plus.Geomap()
+    .data(points)
+    .ocean("#eef")
+    .tiles(true)
+    .render();
+
+</script>

@@ -1,0 +1,32 @@
+
+html, body{
+  height: 100%;
+}
+
+body{
+  background:url(./Data/Surface.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+
+
+h1 {
+	color:#104E8B; 
+	font: Helvetica;
+	font-size: 26px;
+	font-weight: lighter;
+}
+
+
+h2 {
+	color:#104E8B; 
+	font: Helvetica;
+	font-size: 20px;
+	font-weight: lighter;
+	text-align:left;
+}
+
+p {
+  color: black;
+  text-align: center;
+}
