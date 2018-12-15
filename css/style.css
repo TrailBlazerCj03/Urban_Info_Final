@@ -4,7 +4,7 @@ html, body{
 }
 
 body{
-  background:url(./Data/Surface.jpg) bottom center no-repeat;
+  background:url(./Data/Background_1.png) bottom center no-repeat;
   background-size: cover;
   margin: 0px;
 }
@@ -12,22 +12,427 @@ body{
 
 
 h1 {
-	color:#104E8B; 
+	color:#00F5FF; 
 	font: Helvetica;
 	font-size: 26px;
 	font-weight: lighter;
+	text-align:center
+    /*left:13.5%;*/
 }
 
 
 h2 {
-	color:#104E8B; 
+	color:#F8F8FF; 
 	font: Helvetica;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: lighter;
-	text-align:left;
+	text-align:right;
 }
 
-p {
-  color: black;
-  text-align: center;
+.Content{
+        font: Helvetica;
+        width: 120px;  
+        color: #fff;  
+
 }
+	.Content nav{ 
+        width: 100%;  
+        height: 60px;     
+        background: rgba(0,0,0,.3);  
+        position: absolute;  
+        z-index: 100;  
+    }  
+    .Content nav ul{
+        font: Helvetica;  
+        list-style: none;  
+        margin: 0;  
+        padding: 0;  
+    }  
+    .Content nav ul li{ 
+        font: Helvetica; 
+        text-align: center;  
+        float: left;  
+        line-height: 60px;  
+    }  
+    .Content nav ul li a{ 
+        font: Helvetica;
+        width: 120px;  
+        color: #fff;  
+        font-size: 12px;  
+        font-weight: 600;  
+        display: block;  
+    }  
+
+/*p {
+  color: white;
+  text-align: left;
+}*/
+
+.Proj{
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:left;
+    position: absolute;
+    top:28%;
+    left:3.5%;
+}
+        .Proj ul{
+        list-style: none;
+        margin:0;
+        padding:0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #F8F8FF;  
+        margin: 0;
+        padding: 0;
+        }
+        .Proj ul li a{
+        list-style: none;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #fff;  
+        letter-spacing: 1px;  
+        /*position: absolute;  */
+        top:20%;  
+        left: 3.5%;
+        right:70%;
+}
+
+
+.ProjDesc{
+    text-align:left;
+    position: absolute;  
+    top:30%;  
+    left: 3.5%;        
+    right:5%;
+    color: #FFFFFF; 
+}
+
+/*        p {
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF; 
+        margin: 0;
+        padding: 0;
+        display: block;  
+        letter-spacing: 1px;  
+        z-index:20;
+        background:#404040; 
+        text-align: justify
+      }  */
+
+/*.Intro{
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:right;
+    position: absolute;  
+    top:50%;  
+    left: 3.5%;
+    right:70%;
+}
+        ul{
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #fff;  
+        margin: 0;
+        padding: 0;
+        }
+        ul li a{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        letter-spacing: 1px;  
+        position: absolute;  
+        top:50%;  
+        left: 3.5%;
+        right:70%;
+        }
+
+
+.FAR {    
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:left;
+    position: absolute;  
+    top:50%;  
+    left: 13.5%;
+    right:60%;
+}
+/*        ul{
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #fff;  
+        margin: 0;
+        padding: 0;
+        }
+        ul li a{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        letter-spacing: 1px;  
+        position: absolute;  
+        top:50%;  
+        left: 13.5%;
+        right:60%;
+        }*/
+
+/*
+.Corr{    
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:right;
+    top:50%;  
+    left: 23.5%;
+    right:50%;
+}*/
+/*        ul{
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        margin: 0;
+        padding: 0;
+        }
+        ul li a{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        letter-spacing: 1px;  
+        position: absolute;  
+        top:50%;  
+        left: 23.5%;
+        right:50%;
+        }*/
+/*.Zone{    
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:right;
+}
+        ul{
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        margin: 0;
+        padding: 0;
+        }
+        ul li a{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        letter-spacing: 1px;  
+        position: absolute;  
+        top:50%;  
+        left: 43.5%;
+        right:70%;
+        }
+.Descrip{    
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:right;
+}*/
+/*        ul{
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        margin: 0;
+        padding: 0;
+        }
+        ul li a{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        letter-spacing: 1px;  
+        position: absolute;  
+        top:50%;  
+        left: 43.5%;
+        right:30%;
+        }*/
+/*.Typo{    
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:right;
+}*/
+/*        ul{
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #fff;  
+        margin: 0;
+        padding: 0;
+        }
+        ul li a{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        letter-spacing: 1px;  
+        position: absolute;  
+        top:50%;  
+        left: 53.5%;
+        right:20%;
+        }*/
+
+/*.PopTrip{    
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:right;
+}*/
+/*        ul{
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        margin: 0;
+        padding: 0;
+        }
+        ul li a{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        letter-spacing: 1px;  
+        position: absolute;  
+        top:50%;  
+        left: 63.5%;
+        right:10%;
+        }*/
+
+/*.Conclusion{
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:right;
+    display: block;  
+    top:50%;  
+    left: 73.5%;
+    right:10%;
+}
+
+    .Conlusion a{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font:Times New Roman;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #FFFFFF;  
+        letter-spacing: 1px;  
+        position: absolute;  
+        top:50%;  
+        left: 73.5%;
+        right:10%;
+        display: block;  
+        }*/
+
+.rec{
+        width:200px; 
+        height:200px; 
+        border:1px solid #000; 
+}
+
+.enter{
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 50px;
+    font-weight: x-small;
+    text-align:center;
+/*    width: 100%;  
+    height: 60px;     
+    background: rgba(0,0,0,.3);  */
+    position: absolute;  
+    top:60%;  
+    left: 45%;
+    right:70%;
+    z-index: 100; 
+}
+
+    .enter  a{
+        font: Helvetica;
+        width: 120px;  
+        color: #fff;   
+        font-weight: 600;  
+        display: block; 
+        position: absolute;  
+
+
+}
+
+footer {
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align:left;
+    position: absolute;  
+    top:90%;  
+    left: 3.5%;
+    right:70%;
+}
+
+footer .Disclaimer {
+  font-style: italic;
+}
+
+footer p {
+  margin: 3px;
+}
+
+footer p a{
+        list-style: none;
+        font:Times New Roman;
+        font-weight: lighter;
+        color: #fff;  
+        letter-spacing: 1px;  
+}
+
+
+

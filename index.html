@@ -10,32 +10,80 @@
 
     <script language="javascript" type="text/javascript" src="js/sketch1.js"></script>
   </head>
-  <body>
-    <img src="Data/sky.png" align="top" height="200" width="100%"> 
+  <style>
+  body
+    {
+      background-image:url('Data/Background_1.png');
+      background-repeat:no-repeat;
+      background-position:right top;
+      margin-right:200px;
+    }
+  </style>
 
-      <h1>URBAN INFORMATICS FINAL PROJECT</h1>
+
+      <h1><br>DATAMINING THE TAXI: Explorative Analysis on Yellow Taxi Trips based on
+Zoning Features in Brooklyn </h1>
       <h2>Jiacheng Zhou | Danting Luo | Shulin Zhang </h2>
 
-    <nav>
+    <div class='Content'>
+     <nav>
       <ul>
-      <li>DATAMINING THE TAXI IN BROOKLYN: Does higher Commercial FAR mean more populous？
-        <ul>
-          <li><a href="viz/EarlyRushHour_pickup.html"> Heat Map of Early Rush Hour Pick-up in Weekday </a></li>
-          <li><a href="viz/EarlyRushHour_dropoff.html"> Heat Map of Early Rush Hour Drop-off in Weekday </a></li>
-          <li><a href="viz/Weekend_pickup.html"> Heat Map of Weekend Pick-up </a></li>
-          <li><a href="viz/Weekend_dropoff.html"> Heat Map of Weekend Drop-off </a></li>
-
-          <li><a href="viz/heat_map_Weekend.html"> Waiting...</a></li>
-
-        </ul>
-      </li>
-    </ul>
-      
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="Overview/index.html">Overview</a></li>
+        <li><a href="Weekday/index.html">Weekday</a></li>
+        <li><a href="EarlyRushHour/EarlyRushHour_pickup.html">Early Rush Hour</a></li>
+        <li><a href="LateRushHour/LateRushHour_pickup.html"> Late Rush Hour</a></li>
+        <li><a href="Weekend/Weekend_pickup.html">Weekend</a></li>
+        <li><a href="http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml"> Download</a></li>
+      </ul>
     </nav>
+  </div>
 
 
-     
+      <div class="Proj">
+      <ul>
+      <li class="active"><a href="ProjDesc/index.html">Projection Description</a></li>
+      </ul>
+    </div>
 
 
-  </body>
+    <div class='ProjDesc'>
+    
+      <p>- To understand the usage and characteristics of the yellow taxi in the borough of Brooklyn in October 2015. </br>
+      - To understand the relationships between people's behaviors of taking yellow cabs and
+different zoning features, including Residential Districts(R), Commercial Districts (C),
+Manufacturing Districts (M), Park Areas (P).</br>
+      - To visualize the typical trips and identify the populous/typical trips in Brooklyn.</br>
+      </p>
+ 
+    </div>
+
+
+    <div class='enter'>
+        <a href="Enter/index.html">ENTER</a>
+    </div>
+
+
+    <br />
+    <br/>
+    <br/>
+    <br/>
+
+
+
+    <div class= 'rec'>
+      <rect width="300" height="100" rx="20" ry="20" style="fill:yellow;stroke-width:3;stroke:red"/>
+    </div>
+
+  <footer>
+    <p class="Disclaimer">Copyright Trailblazer</p>
+    <p>
+        <a href="index.html">About Us</a>
+        <a href="index.html">Contact Us</a>
+    </p>
+    <p>Copyright @2018</p>
+  </footer>
+
+</body>
+
 </html>

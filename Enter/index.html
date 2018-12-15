@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Urban Informatics</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+    <script language="javascript" type="text/javascript" src="js/d3plus/d3plus.js"></script>
+
+    <script language="javascript" type="text/javascript" src="js/sketch1.js"></script>
+  </head>
+  <style>
+  body
+    {
+      background-image:url('../Data/Background_1.png');
+      background-repeat:no-repeat;
+      background-position:right top;
+      margin-right:200px;
+    }
+  </style>
+
+
+      <h1><br>DATAMINING THE TAXI: Explorative Analysis on Yellow Taxi Trips based on
+Zoning Features in Brooklyn </h1>
+      <h2>Jiacheng Zhou | Danting Luo | Shulin Zhang </h2>
+
+    <div class='Content'>
+     <nav>
+      <ul>
+        <li class="active"><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+      <div class="Intro">
+      
+      <p class='title1'>Part1. Introduction</a></p>
+      <p class='body'> In the New York City, the yellow taxi may be as iconic as Broadway and the Empire State Building. It is really an essential part of the urban life in the city of New York. Taken the taxi data with detail information such as taxi pick-up and drop-off time and locations, passengers
+count, trip distance, and total fare amount as a whole, it is more than a collection of trip data but a story of the urban life in the New York City. Such data can tell the stories like how does the city’s rush hour traffic look like, where does the crowding traffic head to, what is the taxi
+commuting pattern in the city, and how can it be taken advantage by transportation engineers and traffic policymakers for improving the city traffic management. </br>
+
+To figure out how people in New York travel across the city through the yellow taxis within an
+ordinary month of a year, what is the relationship between these taxi trips and city zoning
+features, and what are the meaning and stories that can be extracted from their daily trip-level
+data, we choose yellow taxi’s data of the New York City in October 2015 as our analysis dataset,
+which consists of trip information like taxi pick-up and drop-off time and coordinates,
+passengers count, trip distance, and total fare amount.</br></p>
+  <img class='f1'src="Poster/nyc_pu.png" width=22% height=22%>
+  <img class='f2'src="Poster/nyc_do.png" width=22% height=22%> 
+  <img class='f3'src="Poster/BK_PU.png" width=20% height=20%>
+  <img class='f4'src="Poster/BK_DO.png" width=20% height=20%>
+
+  <p class="body2">By mapping and coloring the coordinates of each taxi pick-up trip and drop-off trip happening in
+October 2015 in the New York City, we obtained two maps, one visualizes all pick-up trips of
+October 2015 in New York City while the other one visualizes all drop-off trips of October 2015
+in the New York City. From the results, we realize that Manhattan, as an extremely compact,
+highly mixed-use and traffic-concentrated area, is too special for our analysis of the relationship between taxi trip and zoning features. Therefore, the analysis site is chosen to be zoomed to
+Brooklyn, NY, instead of the entire city.</br>
+By zooming to Brooklyn, it is obvious that the pick-up trip map and the drop-off trip map have very different patterns. From the pick-up
+trip map, we can tell most of the pick-up trips in Brooklyn in October happen within 5 miles
+around Manhattan and area close to
+John F. Kennedy International
+Airport. While from the drop-off
+trip map, the pattern is quite
+different as the drop-off trips,
+instead of gathering in the certain
+area, scatter around the entire
+Brooklyn.<br>
+It is obvious that Brooklyn has
+much more drop-off trips than
+pick-up trips, which means,
+people are more likely to take
+taxis to Brooklyn, while few of
+them take taxis from Brooklyn.
+The reason of rare pick-up trips
+departing from Brooklyn might
+be that the yellow taxis are
+mainly concentrated in the
+borough of Manhattan, although
+it can be hailed anywhere within
+the five boroughs of New York City with a raised hand or by waiting at a taxi stand. Therefore, we assume that in Brooklyn,
+people living far away from Manhattan are less likely to hail a yellow taxi.<br></p>
+    </div>
+    <div class="clear"></div>
+
+    <div class="FAR">
+    <p class='title2'> Part2: Commercial FAR and Residential FAR </p>
+    <p class='body1'>The results of above analysis make us curious about Brooklyn people’s daily travel pattern
+through the yellow taxis in certain time period of a day and in certain days of a week, which trips
+are the most typical ones in Brooklyn, and make us wonder whether it will show some
+relationships with the zoning features, specifically, the commercial and residential districts. We looked at the commercial FAR and residential FAR in Brooklyn based on taxi zone and
+found out that the places with relatively high commercial FAR are clustering around Manhattan
+(Red Hook, Gowanus, Downtown Brooklyn/ Metrotech, Brooklyn Heights, DUMBO, Brooklyn Navy Yard, and Williamsburg (North Side) etc.) and in the Southern Brooklyn (Marine
+Park/Floyd Bennett Field, Coney Island etc.). While the places with relatively high residential
+FAR are also clustering in the northern Brooklyn (Williamsburg (North Side), Williamsburg
+(South Side), Downtown Brooklyn/ Metrotech, Brooklyn Heights, DUMBO, Brooklyn Navy
+Yard, Boerum Hill, Prospect Heights, Park Slope, and East Flatbush, etc). However, generally
+speaking, commercial FAR and residential FAR show the same pattern in Brooklyn since taxi
+zones with higher commercial FAR also tend to have higher residential FAR. In addition, from
+the two FAR maps, it is obvious that northern Brooklyn has higher commercial and residential
+FAR than any other area in Brooklyn, which means northern Brooklyn is relatively denser area
+in Brooklyn and matches what we observed from the pick-up trip map and the drop-off trip map
+– more taxi trips happened in northern Brooklyn, closer to Manhattan. Therefore, we assume that
+denser places with more population would generate more taxi trips. This is furthered analyzed in
+the next part when using Spearman's rank correlation analysis.
+  <img class='f3'src="Poster/Res_2.jpg" width=25% height=25%>
+  <img class='f4'src="Poster/Comm_2.jpg" width=25% height=25%> 
+    </div>
+
+  <div class="Corr">
+      <p class='title3'> Part3: Correlation Analysis</p>
+      <p class='body'> We conduct Spearman's rank correlation analysis to verify the above assumption. The results
+show that no matter for overall taxi trips in Brooklyn in October 2015, or weekend taxi trips in
+Brooklyn in October 2015, or weekday taxi trips in Brooklyn in October 2015, they all show
+positive relationships with the Average Commercial FAR and Average Residential FAR
+calculated based on taxi zone, with some slight difference. Generally speaking, the Spearman's
+rank correlation coefficient, or the statistical dependence between the rankings of two variables
+of the taxi pick-up trips of October 2015 in Brooklyn and the Average Commercial FAR
+(calculated based on taxi zone) is around 0.48; the Spearman's rank correlation coefficient of two
+variables of the taxi drop-off trips of October 2015 in Brooklyn and the Average Commercial
+FAR is around 0.44; the Spearman's rank correlation coefficient of two variables of the taxi pickup
+trips of October 2015 in Brooklyn and the Average Residential FAR is around 0.7 (calculated
+based on taxi zone); the Spearman's rank correlation coefficient of two variables of the taxi dropoff
+trips of October 2015 in Brooklyn and the Average Residential FAR is around 0.68. To
+summarize, the taxi trip data of October 2015 in Brooklyn has a stronger positive relationship
+with residential FAR than commercial FAR. In other words, the high average residential FAR of a taxi zone is more related to the high volume of taxi trips in Brooklyn than high average commercial FAR. <br>
+However, based on two maps of commercial FAR and residential FAR in Brooklyn, it can not be
+concluded that there is or is not a relationship between taxi trips and zoning features. Therefore,
+to answer this questions, further analysis is conducted in the next section.</p>
+  <img class='f5'src="Poster/Correlation_BK.png" width=25% height=25%>
+  <img class='f6'src="Poster/Correlation_Weekday.png" width=25% height=25%> 
+  <img class='f7'src="Poster/Correlation_Weekend.png" width=25% height=25%> 
+  </div>
+
+  <div class='Zone'>
+    <p class='title4'> Part4: Zoning Features</p>
+    <p class='body1'> According to New York City Zoning regulations, Brooklyn is divided into five basic zoning
+districts: Residential Districts(R), Commercial Districts (C), Manufacturing Districts (M), Park
+Areas (P) and Battery Park (B) to distinguish various building forms and permitted uses.<br></p>
+    <img class='f8'src="Poster/zoning_feature.png" width=25% height=25%>
+    <p class='body2'> We calculate the percentages of different Zoning Features in Brooklyn, the result of which show
+that 16.26% of Brooklyn are manufacturing districts, 12.77% are park area, 3.72% are
+commercial districts, while most of the areas are residential districts that account for 67.23% of
+the total area in Brooklyn.<br></p>
+  <img class='f9'src="Poster/Zone_PU.png" width=25% height=25%> 
+  <img class='f10'src="Poster/Zone_DO.png" width=25% height=25%> 
+
+    <p class='body3'>We also calculate the percentages of pick-up trips and drop-off trips in different land zones of
+Brooklyn, in other words, we calculate how many percentages of pick-up trips departed from
+either residential districts, commercial districts, manufacturing districts, park areas or Battery
+Park, and how many percentages of drop-off trips arrived in either residential districts,
+commercial districts, manufacturing districts, park areas or Battery Park. The results show that
+for the pick-up trips, the rare percent of trips departed from park areas or Battery Park while
+about 16.89% of the pick-up trips departed from manufacturing districts, 22.61% of the pick-up
+trips departed from commercial districts, and most of the pick-up trips (60.09%) departed from
+residential districts. And for the drop-off trips, also the rare percent of trips arrived in park areas
+or Battery Park while about 15.43% of the pick-up trips arrived in manufacturing districts, 11.72%
+of the pick-up trips arrived in commercial districts, and most of the pick-up trips (72.52%)
+arrived in residential districts.<br></p>
+<img class='f8'src="Poster/table2.png" width=25% height=25%>
+
+
+
+
+
+
+
+
+
+
+
+<!--     <div class="Corr">
+      <ul>
+      <li><a href="Corr/index.html">Correlation Analysis</a></li>
+      </ul>
+    </div>
+
+    <div class="Zone">
+      <ul>
+      <li><a href="Zone/index.html">Zoning Features</a></li>
+      </ul>
+    </div>
+
+    <div class="Descrip">
+      <ul>
+      <li><a href="Descrip/index.html">Descriptive Analysis</a></li>
+      </ul>
+    </div>
+
+    <div class="Typo">
+      <ul>
+      <li><a href="Typo/index.html">Typical pick-up and drop-off trips</a></li>
+      </ul>
+    </div>
+
+    <div class="PopTrip">
+      <ul>
+      <li><a href="PopTrip/index.html">Popular Trips</a></li>
+      </ul>
+    </div>
+
+    <div class="Conclusion">
+      <a href="Conclusion/index.html">Conclusion</a>
+    </ul>
+    </div> -->
+
+
+
+
+<!--   <footer>
+    <p class="Disclaimer">Copyright Trailblazer</p>
+    <p>
+        <a href="index.html">About Us</a>
+        <a href="index.html">Contact Us</a>
+    </p>
+    <p>Copyright @2018</p>
+  </footer>
+ -->
+</body>
+
+</html>
+
+

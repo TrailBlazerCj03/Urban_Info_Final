@@ -1,0 +1,149 @@
+
+
+html, body{
+  height: 100%;
+}
+
+body{
+  background:url(./Data/Background_1.png) bottom center no-repeat;
+  background-size: cover;
+  margin: 0px;
+}
+
+
+
+h1 {
+    color:#00F5FF; 
+    font: Helvetica;
+    font-size: 26px;
+    font-weight: lighter;
+    text-align:center
+    /*left:13.5%;*/
+}
+
+
+h2 {
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:right;
+}
+
+.Content{
+        font: Helvetica;
+        width: 120px;  
+        color: #fff;  
+
+}
+    .Content nav{ 
+        width: 100%;  
+        height: 60px;     
+        background: rgba(0,0,0,.3);  
+        position: absolute;  
+        left:85%;
+        z-index: 100;  
+    }  
+    .Content nav ul{
+        font: Helvetica;  
+        list-style: none;  
+        margin: 0;  
+        padding: 0;  
+    }  
+    .Content nav ul li{ 
+        font: Helvetica; 
+        text-align: right;  
+        float: left;  
+        line-height: 60px;  
+        left:70%;
+    }  
+    .Content nav ul li a{ 
+        font: Helvetica;
+        width: 120px;  
+        color: #fff;  
+        font-size: 12px;  
+        font-weight: 600;  
+        display: block;  
+        left:70%;
+    }  
+
+.Intro{    
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:left;
+    /*position: absolute; */
+    left:3.5%;
+    overflow: hidden;
+    margin: 15px;
+}
+    .Intro p{
+        overflow: hidden;
+    }
+    .Intro img{
+        opacity:0.8;
+    }
+
+.clear{
+    clear:both
+}
+/*    .Intro .f1{
+        position: absolute;
+        left:3.5%;
+    }
+
+    .Intro .f2{
+        position: absolute;
+        left:60%;
+    }*/
+.FAR{    
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align:left;
+    /*position: relative; */
+    left:3.5%;
+    overflow: hidden;
+    margin: 15px;
+}
+    .FAR p{
+        overflow: hidden;
+    }
+    .FAR img{
+        opacity:0.8;
+    }
+
+
+
+
+
+footer {
+    color:#F8F8FF; 
+    font: Helvetica;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align:left;
+    position: relative;  
+    top:100%;  
+    left: 3.5%;
+    right:70%;
+}
+
+footer .Disclaimer {
+  font-style: italic;
+}
+
+footer p {
+  margin: 3px;
+}
+
+footer p a{
+        list-style: none;
+        font:Times New Roman;
+        font-weight: lighter;
+        color: #fff;  
+        letter-spacing: 1px;  
+}
+
