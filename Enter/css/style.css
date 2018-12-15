@@ -98,7 +98,7 @@ h2 {
         left:60%;
     }*/
 .FAR{    
-    color:#F8F8FF; 
+    color:black; 
     font: Helvetica;
     font-size: 16px;
     font-weight: lighter;
@@ -115,11 +115,40 @@ h2 {
         opacity:0.9;
     }
 
+.Corr{
+    overflow: hidden;
+    margin: 15px;
+}
+
+.Zone{
+    overflow: hidden;
+    margin: 15px;
+}
+
+.Descrip{
+    overflow: hidden;
+    margin: 15px;
+}
+
+.Typo{
+    overflow: hidden;
+    margin: 15px;
+}
+
+.PopTrip{
+    overflow: hidden;
+    margin: 15px;
+}
+
+.Conslusion{
+    overflow: hidden;
+    margin: 15px;
+}
 
 
 
 
-footer {
+/*footer {
     color:#F8F8FF; 
     font: Helvetica;
     font-size: 12px;
@@ -130,7 +159,7 @@ footer {
     left: 3.5%;
     right:70%;
 }
-
+*/
 footer .Disclaimer {
   font-style: italic;
 }
@@ -143,7 +172,7 @@ footer p a{
         list-style: none;
         font:Times New Roman;
         font-weight: lighter;
-        color: #fff;  
+        color: black;  
         letter-spacing: 1px;  
 }
 
